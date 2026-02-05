@@ -1,13 +1,16 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Create a dynamic, modern, minimal portfolio website for UX/Product Designer Manvi Drona using provided resume/portfolio files and the supplied copy.",
   "architectural_notes": [
     "Treat portfolio-file images as content-managed assets and map them to specific sections/case studies during content integration.",
-    "Incorporate new product-leadership copy via targeted content blocks (e.g., hero/value props/about/case-study roles) with light rewording for consistency and tone."
+    "Incorporate new product-leadership copy via targeted content blocks (e.g., hero/value props/about/case-study roles) with light rewording for consistency and tone.",
+    "Provide a non-code path for updating site copy (e.g., centralized content JSON/MD files or CMS-backed content), so the user can edit text independently."
   ],
-  "known_issues": [],
-  "isFixRequest": false,
+  "known_issues": [
+    "Images added from the portfolio file are not displaying in the deployed site (asset paths/build pipeline likely incorrect)."
+  ],
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-a-modern-minimal-dynamic-portfolio-site-structure-for-manvi-drona-using-the-provided-pasted-copy-hero-value-props-selected-work-case-studies-about-and-contact-as-the-source-of-truth-for-the-initial-content",
@@ -104,6 +107,12 @@
     {
       "id": "AR-4",
       "summary": "Slightly reword and incorporate the provided ‘strategic architect/product leadership’ text across the site in the most relevant, high-impact sections.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Enable user-editable site copy (e.g., via a simple content/config file or lightweight CMS) so Manvi can update text without code changes.",
       "reqIds": [],
       "status": "pending"
     }

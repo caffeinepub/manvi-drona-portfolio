@@ -1,78 +1,10 @@
 {
   "kind": "build_request",
-  "title": "Reorder About section, integrate portfolio images, and incorporate new leadership positioning copy",
+  "title": "Untitled request",
   "priority": "normal",
-  "requirements": [
-    {
-      "id": "REQ-7",
-      "text": "Move the About section so it appears above the Work Samples/Selected Work section on the landing page, and update the header navigation so “About” is the first tab/nav item (tab 1).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "can you move the about to tab 1, and above work samples"
-        ]
-      },
-      "acceptanceCriteria": [
-        "On the landing page, the About section renders before the Selected Work section in the scroll order.",
-        "In the desktop header navigation, the first nav item is “About” and it smoothly scrolls to the About section.",
-        "Work and Contact navigation items still smoothly scroll to their respective sections and remain functional."
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Add the images found in the provided portfolio file into the most relevant landing-page sections and case study pages (e.g., project thumbnails, case study section visuals), using static frontend assets.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "can you add the images in the portfolio file to relevant sections and case studies"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Relevant portfolio images are added to the frontend as static assets (not fetched from the backend) and are referenced from content/config where appropriate.",
-        "Selected Work project cards display updated thumbnails where portfolio images are available and relevant.",
-        "Case study pages include relevant images from the portfolio file, presented in a clean, minimal layout consistent with the existing design system.",
-        "All added images include appropriate alt text and do not break layout on mobile or desktop."
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Slightly reword the provided “strategic architect / product leadership” text and incorporate it across the site in the most relevant, high-impact places (e.g., hero subhead/description, value propositions, and/or about content) while keeping all user-facing text in English.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "use the below text  wiht slight rewording and incorporate it as appropriate in different parts of the site where relevant and most impactful ------ strategic architect capable of blending deep technical intuition with a sophisticated understanding of user behavioral economics",
-          "Product Strategy & Roadmap Sovereignty: Own the long-term vision and execution for high-priority product domains, ensuring alignment with global growth objectives and platform durability.",
-          "Technical & Behavioral Integration: Lead the intersection of engineering, data science, and user research to build features that solve complex social problems and drive deep user resonance.",
-          "Full-Lifecycle Governance: Oversee the end-to-end product development process—from discovery and conceptualization to global deployment and post-launch optimization.",
-          "Performance & Scale Intelligence: Establish advanced KPI frameworks, leveraging high-fidelity analytics and predictive models to guide evidence-based product decisions in real-time.",
-          "Cross-Functional Orchestration: Foster seamless collaboration between Design, Engineering, and Marketing teams to ensure a unified and frictionless user experience across all touchpoints."
-        ]
-      },
-      "acceptanceCriteria": [
-        "The site’s hero/about/value-prop copy is updated to reflect the provided leadership themes with slight rewording (no verbatim copy dumps).",
-        "The updated copy reads naturally as a portfolio positioning statement for Manvi Drona and remains consistent with the site’s modern/minimal tone.",
-        "No user-facing text is added in any language other than English."
-      ]
-    }
-  ],
-  "constraints": [
-    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
-    "Do not introduce third-party integrations (no external CMS, no external image hosting requirements, no email service integration)."
-  ],
-  "nonGoals": [
-    "No new backend features or schema changes are required for this request.",
-    "No new authentication methods beyond existing Internet Identity.",
-    "No redesign of the overall visual theme beyond what is necessary to accommodate the new section order and added images."
-  ],
+  "requirements": [],
+  "constraints": [],
+  "nonGoals": [],
   "imageRequirements": {
     "required": [],
     "edits": []

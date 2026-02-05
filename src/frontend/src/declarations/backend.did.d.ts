@@ -10,18 +10,16 @@ import type { ActorMethod } from '@icp-sdk/core/agent';
 import type { IDL } from '@icp-sdk/core/candid';
 import type { Principal } from '@icp-sdk/core/principal';
 
-export interface Project {
-  'title' : string,
-  'link' : string,
+export interface UploadedFile {
+  'url' : string,
+  'name' : string,
   'description' : string,
 }
-export interface Resume { 'url' : string, 'name' : string }
 export interface _SERVICE {
-  'addProject' : ActorMethod<[string, string, string], undefined>,
-  'addResume' : ActorMethod<[string, string], undefined>,
-  'getAllProjects' : ActorMethod<[], Array<Project>>,
-  'getProject' : ActorMethod<[string], [] | [Project]>,
-  'getResume' : ActorMethod<[string], [] | [Resume]>,
+  'addCV' : ActorMethod<[string], undefined>,
+  'addFile' : ActorMethod<[string, string, string], undefined>,
+  'getAllFiles' : ActorMethod<[], Array<UploadedFile>>,
+  'getFilesCount' : ActorMethod<[], bigint>,
 }
 export declare const idlService: IDL.ServiceClass;
 export declare const idlInitArgs: IDL.Type[];

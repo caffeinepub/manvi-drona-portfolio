@@ -89,101 +89,75 @@ export class ExternalBlob {
         return this;
     }
 }
-export interface Project {
-    title: string;
-    link: string;
-    description: string;
-}
-export interface Resume {
+export interface UploadedFile {
     url: string;
     name: string;
+    description: string;
 }
 export interface backendInterface {
-    addProject(title: string, description: string, link: string): Promise<void>;
-    addResume(name: string, url: string): Promise<void>;
-    getAllProjects(): Promise<Array<Project>>;
-    getProject(title: string): Promise<Project | null>;
-    getResume(name: string): Promise<Resume | null>;
+    addCV(url: string): Promise<void>;
+    addFile(name: string, url: string, description: string): Promise<void>;
+    getAllFiles(): Promise<Array<UploadedFile>>;
+    getFilesCount(): Promise<bigint>;
 }
-import type { Project as _Project, Resume as _Resume } from "./declarations/backend.did.d.ts";
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
-    async addProject(arg0: string, arg1: string, arg2: string): Promise<void> {
+    async addCV(arg0: string): Promise<void> {
         if (this.processError) {
             try {
-                const result = await this.actor.addProject(arg0, arg1, arg2);
+                const result = await this.actor.addCV(arg0);
                 return result;
             } catch (e) {
                 this.processError(e);
                 throw new Error("unreachable");
             }
         } else {
-            const result = await this.actor.addProject(arg0, arg1, arg2);
+            const result = await this.actor.addCV(arg0);
             return result;
         }
     }
-    async addResume(arg0: string, arg1: string): Promise<void> {
+    async addFile(arg0: string, arg1: string, arg2: string): Promise<void> {
         if (this.processError) {
             try {
-                const result = await this.actor.addResume(arg0, arg1);
+                const result = await this.actor.addFile(arg0, arg1, arg2);
                 return result;
             } catch (e) {
                 this.processError(e);
                 throw new Error("unreachable");
             }
         } else {
-            const result = await this.actor.addResume(arg0, arg1);
+            const result = await this.actor.addFile(arg0, arg1, arg2);
             return result;
         }
     }
-    async getAllProjects(): Promise<Array<Project>> {
+    async getAllFiles(): Promise<Array<UploadedFile>> {
         if (this.processError) {
             try {
-                const result = await this.actor.getAllProjects();
+                const result = await this.actor.getAllFiles();
                 return result;
             } catch (e) {
                 this.processError(e);
                 throw new Error("unreachable");
             }
         } else {
-            const result = await this.actor.getAllProjects();
+            const result = await this.actor.getAllFiles();
             return result;
         }
     }
-    async getProject(arg0: string): Promise<Project | null> {
+    async getFilesCount(): Promise<bigint> {
         if (this.processError) {
             try {
-                const result = await this.actor.getProject(arg0);
-                return from_candid_opt_n1(this._uploadFile, this._downloadFile, result);
+                const result = await this.actor.getFilesCount();
+                return result;
             } catch (e) {
                 this.processError(e);
                 throw new Error("unreachable");
             }
         } else {
-            const result = await this.actor.getProject(arg0);
-            return from_candid_opt_n1(this._uploadFile, this._downloadFile, result);
+            const result = await this.actor.getFilesCount();
+            return result;
         }
     }
-    async getResume(arg0: string): Promise<Resume | null> {
-        if (this.processError) {
-            try {
-                const result = await this.actor.getResume(arg0);
-                return from_candid_opt_n2(this._uploadFile, this._downloadFile, result);
-            } catch (e) {
-                this.processError(e);
-                throw new Error("unreachable");
-            }
-        } else {
-            const result = await this.actor.getResume(arg0);
-            return from_candid_opt_n2(this._uploadFile, this._downloadFile, result);
-        }
-    }
-}
-function from_candid_opt_n1(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: [] | [_Project]): Project | null {
-    return value.length === 0 ? null : value[0];
-}
-function from_candid_opt_n2(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: [] | [_Resume]): Resume | null {
-    return value.length === 0 ? null : value[0];
 }
 export interface CreateActorOptions {
     agent?: Agent;

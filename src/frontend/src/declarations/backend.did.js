@@ -8,37 +8,33 @@
 
 import { IDL } from '@icp-sdk/core/candid';
 
-export const Project = IDL.Record({
-  'title' : IDL.Text,
-  'link' : IDL.Text,
+export const UploadedFile = IDL.Record({
+  'url' : IDL.Text,
+  'name' : IDL.Text,
   'description' : IDL.Text,
 });
-export const Resume = IDL.Record({ 'url' : IDL.Text, 'name' : IDL.Text });
 
 export const idlService = IDL.Service({
-  'addProject' : IDL.Func([IDL.Text, IDL.Text, IDL.Text], [], []),
-  'addResume' : IDL.Func([IDL.Text, IDL.Text], [], []),
-  'getAllProjects' : IDL.Func([], [IDL.Vec(Project)], ['query']),
-  'getProject' : IDL.Func([IDL.Text], [IDL.Opt(Project)], ['query']),
-  'getResume' : IDL.Func([IDL.Text], [IDL.Opt(Resume)], ['query']),
+  'addCV' : IDL.Func([IDL.Text], [], []),
+  'addFile' : IDL.Func([IDL.Text, IDL.Text, IDL.Text], [], []),
+  'getAllFiles' : IDL.Func([], [IDL.Vec(UploadedFile)], ['query']),
+  'getFilesCount' : IDL.Func([], [IDL.Nat], ['query']),
 });
 
 export const idlInitArgs = [];
 
 export const idlFactory = ({ IDL }) => {
-  const Project = IDL.Record({
-    'title' : IDL.Text,
-    'link' : IDL.Text,
+  const UploadedFile = IDL.Record({
+    'url' : IDL.Text,
+    'name' : IDL.Text,
     'description' : IDL.Text,
   });
-  const Resume = IDL.Record({ 'url' : IDL.Text, 'name' : IDL.Text });
   
   return IDL.Service({
-    'addProject' : IDL.Func([IDL.Text, IDL.Text, IDL.Text], [], []),
-    'addResume' : IDL.Func([IDL.Text, IDL.Text], [], []),
-    'getAllProjects' : IDL.Func([], [IDL.Vec(Project)], ['query']),
-    'getProject' : IDL.Func([IDL.Text], [IDL.Opt(Project)], ['query']),
-    'getResume' : IDL.Func([IDL.Text], [IDL.Opt(Resume)], ['query']),
+    'addCV' : IDL.Func([IDL.Text], [], []),
+    'addFile' : IDL.Func([IDL.Text, IDL.Text, IDL.Text], [], []),
+    'getAllFiles' : IDL.Func([], [IDL.Vec(UploadedFile)], ['query']),
+    'getFilesCount' : IDL.Func([], [IDL.Nat], ['query']),
   });
 };
 

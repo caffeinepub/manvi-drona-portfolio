@@ -6,12 +6,12 @@
       "client": "SSA · Interactive Communication Processing (ICP)",
       "images": [
         {
-          "src": "/assets/portfolio/ssa-icp-workflow.png",
+          "src": "/assets/generated/project-thumb-1.dim_1200x800.png",
           "alt": "ICP workflow diagram showing progressive disclosure and step-by-step process",
           "caption": "Redesigned workflow breaking complex tasks into clear, predictable steps"
         },
         {
-          "src": "/assets/portfolio/ssa-icp-interface.png",
+          "src": "/assets/generated/project-thumb-2.dim_1200x800.png",
           "alt": "ICP interface showing document preview and validation",
           "caption": "Preview and validation interface reducing errors before document generation"
         }
@@ -66,12 +66,12 @@
       "client": "Social Security Administration · Enterprise UX Design System",
       "images": [
         {
-          "src": "/assets/portfolio/ssa-design-system-components.png",
+          "src": "/assets/generated/project-thumb-2.dim_1200x800.png",
           "alt": "SSA design system component library showing buttons, forms, and navigation patterns",
           "caption": "Reusable component library ensuring consistency across applications"
         },
         {
-          "src": "/assets/portfolio/ssa-design-system-documentation.png",
+          "src": "/assets/generated/project-thumb-3.dim_1200x800.png",
           "alt": "Design system documentation showing accessibility guidelines and usage patterns",
           "caption": "Comprehensive documentation supporting cross-team adoption"
         }
@@ -114,12 +114,12 @@
       "client": "U.S. Department of Labor · Women's Bureau",
       "images": [
         {
-          "src": "/assets/portfolio/dol-womens-bureau-ia.png",
+          "src": "/assets/generated/project-thumb-3.dim_1200x800.png",
           "alt": "Information architecture diagram showing restructured content hierarchy",
           "caption": "Restructured information architecture providing clearer paths to content"
         },
         {
-          "src": "/assets/portfolio/dol-womens-bureau-templates.png",
+          "src": "/assets/generated/project-thumb-1.dim_1200x800.png",
           "alt": "Accessible page templates for the Women's Bureau website",
           "caption": "Consistent, accessible templates improving editorial workflows"
         }
