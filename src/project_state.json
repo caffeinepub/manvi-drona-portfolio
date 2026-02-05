@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a dynamic, modern, minimal portfolio website for UX/Product Designer Manvi Drona using provided resume/portfolio files and the supplied copy.",
+  "architectural_notes": [
+    "Treat portfolio-file images as content-managed assets and map them to specific sections/case studies during content integration.",
+    "Incorporate new product-leadership copy via targeted content blocks (e.g., hero/value props/about/case-study roles) with light rewording for consistency and tone."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-modern-minimal-dynamic-portfolio-site-structure-for-manvi-drona-using-the-provided-pasted-copy-hero-value-props-selected-work-case-studies-about-and-contact-as-the-source-of-truth-for-the-initial-content",
+      "title": "Create a modern, minimal, dynamic portfolio site structure for “Manvi Drona” using the provided pasted copy (hero, value props, selected work, case studies, about, and contact) as the source of truth for the initial content.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-visual-theme-colors-typography-scale-spacing-system-component-style-that-is-modern-and-minimal-applied-consistently-across-all-pages-sections-avoid-blue-purple-as-primary-accents",
+      "title": "Implement a coherent visual theme (colors, typography scale, spacing system, component style) that is modern and minimal, applied consistently across all pages/sections (avoid blue/purple as primary accents).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-case-study-detail-views-for-the-projects-explicitly-referenced-in-the-copy-including-1-ssa-interactive-communication-processing-icp-with-the-provided-case-study-1-content-and-2-u-s-department-of-labor-women-s-bureau-with-the-provided-case-study-3-content-ensure-the-selected-work-section-links-to-these-case-study-views",
+      "title": "Add case study detail views for the projects explicitly referenced in the copy, including: (1) SSA · Interactive Communication Processing (ICP) with the provided Case Study 1 content, and (2) U.S. Department of Labor · Women’s Bureau with the provided Case Study 3 content. Ensure the “Selected Work” section links to these case study views.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-user-s-resume-and-portfolio-files-as-first-class-site-assets-expose-a-resume-pdf-cta-that-downloads-opens-the-resume-and-incorporate-any-additional-case-study-project-content-found-in-the-portfolio-files-into-the-site-s-projects-case-studies-without-requiring-code-changes-for-basic-text-updates",
+      "title": "Use the user’s resume and portfolio files as first-class site assets: expose a “Resume (PDF)” CTA that downloads/opens the resume, and incorporate any additional case study/project content found in the portfolio files into the site’s projects/case studies without requiring code changes for basic text updates.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-lightweight-dynamic-experience-layer-subtle-animations-and-interactive-states-e-g-section-reveal-on-scroll-hover-focus-transitions-on-work-cards-smooth-in-page-navigation-while-keeping-accessibility-as-a-baseline-keyboard-navigation-focus-states-reduced-motion",
+      "title": "Add a lightweight “dynamic” experience layer: subtle animations and interactive states (e.g., section reveal on scroll, hover/focus transitions on work cards, smooth in-page navigation) while keeping accessibility as a baseline (keyboard navigation, focus states, reduced motion).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-let-s-talk-section-with-working-outbound-links-linkedin-and-a-clear-contact-method-using-only-static-outbound-approaches-no-email-service-integration",
+      "title": "Implement a Contact/Let’s Talk section with working outbound links (LinkedIn) and a clear contact method, using only static/outbound approaches (no email service integration).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-move-the-about-section-so-it-appears-above-the-work-samples-selected-work-section-on-the-landing-page-and-update-the-header-navigation-so-about-is-the-first-tab-nav-item-tab-1",
+      "title": "Move the About section so it appears above the Work Samples/Selected Work section on the landing page, and update the header navigation so “About” is the first tab/nav item (tab 1).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-images-found-in-the-provided-portfolio-file-into-the-most-relevant-landing-page-sections-and-case-study-pages-e-g-project-thumbnails-case-study-section-visuals-using-static-frontend-assets",
+      "title": "Add the images found in the provided portfolio file into the most relevant landing-page sections and case study pages (e.g., project thumbnails, case study section visuals), using static frontend assets.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-slightly-reword-the-provided-strategic-architect-product-leadership-text-and-incorporate-it-across-the-site-in-the-most-relevant-high-impact-places-e-g-hero-subhead-description-value-propositions-and-or-about-content-while-keeping-all-user-facing-text-in-english",
+      "title": "Slightly reword the provided “strategic architect / product leadership” text and incorporate it across the site in the most relevant, high-impact places (e.g., hero subhead/description, value propositions, and/or about content) while keeping all user-facing text in English.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a dynamic, modern, minimal portfolio site for Manvi Drona using the pasted copy plus provided resume and portfolio files (case studies, about, CTAs, contact).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Reorder navigation/layout so the About section is in tab 1 and appears above the Work Samples/Selected Work section.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add and place images from the provided portfolio file into the most relevant site sections and case study pages.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Slightly reword and incorporate the provided ‘strategic architect/product leadership’ text across the site in the most relevant, high-impact sections.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Manvi Drona Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "name": "Manvi Drona",
+    "title": "Strategic Product Leader",
+    "headline": "From chaos to clarity. Designed for people. Built to last.",
+    "subhead": "A strategic architect blending deep technical intuition with sophisticated understanding of user behavioral economics.",
+    "description": "I lead multidisciplinary teams to build digital products that solve complex social problems and drive meaningful user engagement. From discovery through global deployment, I connect user needs with business objectives to create experiences that define the frontier of digital interaction."
+  },
+  "valueProps": {
+    "heading": "Strategic capabilities that drive impact",
+    "items": [
+      {
+        "title": "Product Strategy & Roadmap Sovereignty",
+        "description": "Own long-term vision and execution for high-priority product domains, ensuring alignment with global growth objectives and platform durability."
+      },
+      {
+        "title": "Technical & Behavioral Integration",
+        "description": "Lead the intersection of engineering, data science, and user research to build features that solve complex problems and drive deep user resonance."
+      },
+      {
+        "title": "Full-Lifecycle Governance",
+        "description": "Oversee end-to-end product development—from discovery and conceptualization to global deployment and post-launch optimization."
+      },
+      {
+        "title": "Performance & Scale Intelligence",
+        "description": "Establish advanced KPI frameworks, leveraging high-fidelity analytics and predictive models to guide evidence-based product decisions in real-time."
+      },
+      {
+        "title": "Cross-Functional Orchestration",
+        "description": "Foster seamless collaboration between Design, Engineering, and Marketing teams to ensure unified, frictionless user experiences across all touchpoints."
+      },
+      {
+        "title": "Systems That Scale and Endure",
+        "description": "Design patterns and standards that remain usable, maintainable, and resilient as platforms grow and evolve."
+      }
+    ]
+  },
+  "about": {
+    "content": "I'm a strategic product leader with 20+ years of experience building digital systems that people rely on. I serve as an overarching product compass for multidisciplinary squads, combining deep technical intuition with a sophisticated understanding of user behavioral economics. My approach focuses on clarity, usability, and longevity—working within real-world constraints while directly influencing operational strategy for platforms that define modern culture."
+  }
+}

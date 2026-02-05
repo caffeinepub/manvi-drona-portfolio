@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "slug": "ssa-icp",
+      "title": "Reducing workflow friction in a high-volume internal system",
+      "client": "Social Security Administration · Interactive Communication Processing (ICP)",
+      "description": "Creating consistency and accessibility at enterprise scale",
+      "thumbnail": "/assets/portfolio/ssa-icp-thumb.png"
+    },
+    {
+      "slug": "ssa-design-system",
+      "title": "Creating consistency and accessibility at enterprise scale",
+      "client": "Social Security Administration · Enterprise UX Design System",
+      "description": "Building a scalable design system for government services",
+      "thumbnail": "/assets/portfolio/ssa-design-system-thumb.png"
+    },
+    {
+      "slug": "dol-womens-bureau",
+      "title": "Modernizing a public platform without breaking trust",
+      "client": "U.S. Department of Labor · Women's Bureau",
+      "description": "Restructuring content and improving accessibility for a public-facing platform",
+      "thumbnail": "/assets/portfolio/dol-womens-bureau-thumb.png"
+    }
+  ]
+}
